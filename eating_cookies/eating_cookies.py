@@ -18,6 +18,9 @@ def eating_cookies(n, cache=None):
 
   return eating_cookies(n -1) + eating_cookies(n - 2) + eating_cookies(n - 3)
 
+
+eating_cookies(5),
+
 if __name__ == "__main__":
   if len(sys.argv) > 1:
     num_cookies = int(sys.argv[1])

@@ -3,8 +3,9 @@
 import sys
 
 def rock_paper_scissors(n):
-  pass 
-
+  # Get all possible plays
+  choices = ["rock", "paper", "scissors"]
+  
 
 if __name__ == "__main__":
   if len(sys.argv) > 1:
