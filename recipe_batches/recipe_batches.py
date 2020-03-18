@@ -3,7 +3,13 @@
 import math
 
 def recipe_batches(recipe, ingredients):
-  pass 
+  # Create while loop while cooking
+  # First check ingredients dictionary has all the same properties and recipe
+  # # If not return 0
+  # Have counter and loop throut ingredients dictionaryand subtract the recipe amount
+  # from the ingredient. check if our ingredient is less than 0
+  # If it's less than 0 break out of loop and  set cooing to false
+  # return the count because no more can be made 
 
 
 if __name__ == '__main__':
