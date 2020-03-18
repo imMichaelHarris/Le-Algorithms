@@ -10,6 +10,23 @@ def recipe_batches(recipe, ingredients):
   # from the ingredient. check if our ingredient is less than 0
   # If it's less than 0 break out of loop and  set cooing to false
   # return the count because no more can be made 
+  cooking = True
+  amount = 0
+  while cooking:
+    for key, value in recipe.items():
+      print(f"{key} {value} {key in ingredients.keys()}")
+      if key in ingredients.keys() and ingredients[key] >= recipe[key]:
+        print("hi")
+        ingredients[key] -= value
+        print(f"updated {ingredients[key]}")
+      else:
+        print("here")
+        cooking = False
+        amount -= 1
+        break
+    amount += 1
+
+  return amount
 
 
 if __name__ == '__main__':
